@@ -1,0 +1,12 @@
+service Arithmetic {
+  rpc Add(AddRequest) returns (AddReply) {}
+}
+
+message AddRequest {
+  required int32 value_1 = 1;
+  required int32 value_2 = 2;
+}
+
+message AddReply {
+   required int64 response = 1;
+}
